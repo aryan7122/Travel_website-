@@ -1,0 +1,445 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+header{
+    width: 90%;
+    height: 95vh;
+    /* border: 1px solid red; */
+    margin:  auto;
+}
+header nav{
+    width: 95%;
+    height: 7%;
+    /* border: 1px solid rgb(180, 66, 85); */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li{
+    display: flex;
+    text-decoration: none ;
+    margin: 0px 10px 0px 10px;
+    text-decoration-style:none;
+    padding: 14px;
+}
+header nav ul li:nth-last-child(1){
+    background: #000;
+    border-radius: 20px;
+    padding: 13px 25px 0px 25px;
+
+}
+header nav ul li:nth-last-child(1) a{
+    color: #fff;
+}
+header nav ul li a{
+    text-decoration: none ;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .3s linear;
+    color:#121213;
+}
+header nav ul li a:hover{
+    color: rgb(200, 200, 200);
+}
+header nav .bi-three-dots{
+ display: none;
+}
+header .content{
+    position: relative;
+    width: 100%;
+    height: 93%;
+    /* border: 1px solid black; */
+}
+header .content::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 80%;
+    /* border: 1px solid yellow; */
+    background: url('img/woman-1836601.jpg') no-repeat center center/cover;
+    border-radius: 10px;
+    z-index: -1;
+
+}
+header .content .cont_box{
+    width: 400px;
+    height: auto;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+}
+header .content .cont_box h1{
+    line-height: 40px;
+    font-weight: 800;
+    margin: 0;
+    /* border: 1px solid black; */
+    text-shadow: 0px 2px 4px black;
+}
+header .content .cont_box p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #e3e3e3;
+    text-shadow: 0px 2px 4px black;
+}
+header .content .cont_box button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 10px .1px rgb(51, 51, 51);
+    background: black;
+    color: white;
+    font-size: 13px;
+    outline: none;
+    cursor: pointer;
+    transition: .2s linear;
+}
+header .content .cont_box button:hover{
+    box-shadow: 0px 0px 15px 1px rgb(88, 88, 88);
+    background: rgba(0, 0, 0, 0.859);
+    color: wheat;
+}
+header .content .cont_box button:active{
+    box-shadow: 0px 0px 15px 1px rgb(0, 0, 0);
+    
+}
+header .trip_bx{
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    margin-top: 88px;
+    /* border: 1px solid green; */
+}
+header .trip_bx .search_bx{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 560px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgb(82, 82, 82);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: auto;
+    margin-bottom: -60px;
+}
+header .trip_bx .search_bx .card{
+    width: 200px;
+    height: 100%;
+    /* border: 1px solid black; */
+    
+}
+header .trip_bx .search_bx .card h4{
+    font-size: 15px;
+    margin: 0;
+    font-weight: 700;
+}
+header .trip_bx .search_bx .card h4 .bi{
+    position: absolute;
+    font-size: 20px;
+    margin: 0px 0px 0px 5px;
+    transition: .3 linear;
+    
+}
+header .trip_bx .search_bx .card input{
+    margin-top: 3px;
+    padding: 5px 0px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+}
+header .trip_bx .search_bx input[type="button"]{
+    background: black;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+header .trip_bx .search_bx input[type="button"]:hover{
+    /* box-shadow: 0px 0px 15px 1px rgb(255, 255, 255); */
+        background: rgba(0, 0, 0, 0.859);
+        color: wheat;
+}
+header .trip_bx .traval_bx{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    top: 40px;
+    /* border: 1px dotted  black; */
+    border-radius: 10px;
+    padding-bottom: 20px;
+    /* background: #000; */
+    box-shadow: 0px 20px 25px -10px rgb(161, 161, 161);
+}
+header .trip_bx .traval_bx::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgb(241,241,241, .7);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+header .trip_bx .traval_bx h4{
+    font-size: 17px;
+    margin: 0;
+    padding: 60px 0px 15px 2.5%;
+}
+header .trip_bx .traval_bx .cards{
+    width: 96%;
+    height: auto;
+    margin: 0px auto;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+}
+header .trip_bx .traval_bx .cards::-webkit-scrollbar{
+    scroll-behavior:smooth;
+}
+header .trip_bx .traval_bx .cards .card{
+    min-width: 220px;
+    height: 180px;
+    
+    /* border: 1px solid rgb(77, 164, 19); */
+}
+header .trip_bx .traval_bx .cards .card h3{
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+header .trip_bx .traval_bx .cards .card h3 img{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    
+}
+header .trip_bx .traval_bx .cards .card img{
+    width: 100%;
+    height: 50%;
+}
+header .trip_bx .traval_bx .cards .card .btn_city{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+header .trip_bx .traval_bx .cards .card .btn_city a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 20px;
+    font-size: 11px;
+    transition: .3s linear;
+}
+header .trip_bx .traval_bx .cards .card .btn_city a:hover{
+    background-color: rgb(75, 75, 75);
+}
+header .trip_bx .traval_bx .cards .card .btn_city h5{
+    font-size: 11px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 5px;
+    line-height: 15px;
+}
+header .trip_bx .traval_bx .cards .card .btn_city h5 span{
+    font-size: 13px;
+    font-weight: 700;
+    
+}
+
+
+
+body{
+    overflow-y: auto;
+
+}
+body::-webkit-scrollbar{
+    scroll-behavior: smooth;
+    overflow: hidden;
+    overflow-wrap: break-word;
+
+}
+
+.offers{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    /* border: 1px dotted black; */
+    margin-top: 130px;
+    margin-bottom: 30px;
+}
+.offers h1{
+    font-weight: 600;
+    text-align: center;
+}
+.offers p{
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+.offers .cards{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+    margin: auto;
+}
+.offers .cards .card{
+    position: relative;
+    width: 200px;
+    height: 350px;
+    margin: 5px;
+    /* border: 1px solid rgb(229, 228, 228); */
+}
+.offers .cards .card h3{
+    width: 140px;
+    padding: 6px 0px;
+    background: rgb(165, 243, 165);
+    border-radius: 20px;
+    font-size: 12px;
+    display: grid;
+    place-items: center;
+    margin: auto;
+}
+.offers .cards .card .img_text{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-top: 5px;
+}
+.offers .cards .card .img_text img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.offers .cards .card .img_text h4{
+    position: absolute;
+    font-size: 9px;
+    padding: 10px 15px;
+    bottom: 0;
+    margin: 0;
+    color: #fff;
+    z-index: 2;
+}
+.offers .cards .card .img_text h4::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+}
+.offers .cards .card .cont_bx{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(229, 228, 228);
+    /* border: 1px solid rgb(16, 172, 164); */
+    padding: 5px 0px;
+    border-radius: 0px 0px 5px 5px;
+}
+.offers .cards .card .cont_bx .price, .dayes{
+    margin: 0px 8px;
+    
+}
+.offers .cards .card .cont_bx .price .heart_chat{
+    display: flex;
+    align-items: center;
+}
+.offers .cards .card .cont_bx .price .heart_chat i:nth-child(1){
+    color: red;
+    font-size: 13px;
+    margin-right: 10px;
+}
+.offers .cards .card .cont_bx .price .heart_chat i:nth-child(1) span{
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    margin-left: 3px;
+    font-style: normal;
+}
+.offers .cards .card .cont_bx .price .heart_chat i:nth-child(2){
+    color: rgb(15, 100, 121);
+    font-size: 13px;
+    margin-right: 10px;
+}
+.offers .cards .card .cont_bx .price .heart_chat i:nth-child(2) span{
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    margin-left: 3px;
+    font-style: normal;
+}
+.offers .cards .card .cont_bx .price .info_price{
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+.offers .cards .card .cont_bx .price .info_price a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 11px;
+    transition: .2s linear;
+    margin-right: 13px;
+    background: rgb(17, 174, 231);
+    padding: 4px;
+    border-radius: 5px 5px 5px 5px;
+}
+.offers .cards .card .cont_bx .price .info_price a:hover{
+    background: rgb(24, 139, 182);
+    color: rgb(229, 229, 229);
+}
+.offers .cards .card .cont_bx .price .info_price h4{
+    margin: 0;
+    font-size: 13px;
+}
+
+.offers .cards .card .cont_bx .dayes{
+    color: white;
+    background: black;
+    padding: 10px;
+    padding-top: 13px;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s linear;
+}
+.offers .cards .card .cont_bx .dayes:hover{
+    transform: rotate(360deg);
+}
