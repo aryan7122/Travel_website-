@@ -25,6 +25,11 @@ header nav{
 }
 header nav ul {
     display: flex;
+    /* top: -100; */
+}
+/* js class */
+header nav .ul_active {
+    /* top: 0; */
 }
 header nav ul li{
     display: flex;
@@ -278,13 +283,11 @@ header .trip_bx .traval_bx .cards .card .btn_city h5 span{
 
 body{
     overflow-y: auto;
-
 }
 body::-webkit-scrollbar{
     scroll-behavior: smooth;
     overflow: hidden;
     overflow-wrap: break-word;
-
 }
 
 .offers{
@@ -442,4 +445,213 @@ body::-webkit-scrollbar{
 }
 .offers .cards .card .cont_bx .dayes:hover{
     transform: rotate(360deg);
+}
+
+.destination{
+    width: 45%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 20px;
+}
+.destination .des_bx, .img_bx{
+    position: relative;
+    width: 50%;
+    height: auto;
+    /* border: 1px solid red; */
+    
+}
+#imm{
+
+    box-shadow: 0px 5px 20px gray;
+}
+.destination .des_bx{
+    margin: 0;
+}
+.destination .des_bx h4 {
+    margin: 0;
+    font-size: 12px;
+    color: #000;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.destination .des_bx p {
+    font-size: 12px;
+}
+.destination .des_bx li {
+    font-size: 12px;
+    list-style-type: none;
+    line-height: 35px;
+}
+.destination .des_bx h6{
+    width: 250px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.destination .des_bx button{
+    font-size: 12px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    border: 2px solid black;
+    transition: .3s linear;
+    margin-top: 15px;
+}
+.destination .des_bx button:hover{
+    background: grey;
+    border: 2px solid grey;
+}
+.destination .img_bx img{
+    width: 100%;
+    height: 420px;
+    border-radius: 5px;
+}
+.destination .img_bx .msg{
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    width: 170px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0px 5px 20px gray;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+.destination .img_bx .msg:nth-child(2){
+    top: 10%;
+    left: 55%;
+}
+.destination .img_bx .msg:hover{
+    box-shadow: 3px 10px 30px gray;
+}
+.destination .img_bx .msg img{
+    width: 30px;
+    height: 55%;
+}
+.destination .img_bx .msg .cont{
+    margin-left: 15px;
+}
+.destination .img_bx .msg .cont h4{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+.destination .img_bx .msg .cont .bi:nth-child(1){
+    color: red;
+    margin-right: 5px;
+    font-size: 13px;
+}
+.destination .img_bx .msg .cont .bi span{
+    font-style: normal;
+    margin-left: 3px;
+    font-size: 12px;
+    color: gray;
+}
+.destination .img_bx .msg .cont .bi:nth-child(2) {
+    color: rgb(7, 98, 128);
+        margin-right: 5px;
+        font-size: 13px;
+}
+footer{
+    width: 100%;
+    height: auto;
+    /* background: #dfdfdf; */
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.br{
+    width: 80%;
+    border-top: 2px solid #c0c0c0;
+    margin: auto;
+    margin-top: 90px;
+    box-shadow: 1px 3px 22px 2px rgb(198, 198, 198);
+}
+footer h2{
+    text-align: center;
+    margin: 0;
+    margin-top: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 20px;
+}
+footer p{
+    width: 70%;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #1e1e1e;
+    margin: 10px;
+    word-spacing: 10px;
+    text-shadow: 0px 5px 5px rgb(174, 174, 174);
+}
+footer .input{
+    box-shadow: 0px 3px 20px -1px grey;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+footer .input input{
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    border-radius: 20px 0px  0px 20px ;
+    background: #ffffff;
+    color: #575757;
+    font-family:Arial, Helvetica, sans-serif;
+}
+footer .input button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 0px 20px 20px 0px;
+    background: red;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-top: .0px;
+    transition: .3s linear;
+    height: 42px;
+}
+footer .input button:hover{
+    background: rgb(204, 4, 4);
+    color: #c0c0c0;
+}
+footer .input button:active{
+    background: rgb(206, 206, 206);
+    color: #202020;
+    border-left: .7px  solid rgb(0, 247, 205);
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    /* align-items: center; */
+    margin: 30px;
+}
+footer ul li{
+    text-align: center;
+    margin-right:30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+footer ul li h6{
+    text-align: center;
+    margin-right: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 120px;
+    margin: 0;
+    line-height: 20px;
+    border-top: 2px solid rgb(82, 82, 82);
 }
